@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel= "stylesheet" href ="./css/style.css">
+    <link rel="icon" href="./images/unionJack.png">
+    <title>Secret Agent Man</title>
+</head>
+<body>
+    <div id="welcome">
+        <h3>International Human of Mystery's Enocding/Decoding Tool</h3>
+        <div class="links">
+            <a href="#encoder">Encoder</a>
+            <a href="#decoder">Decoder</a>
+        </div>
+        <h4> scroll </h4>
+    </div>
+    <div id = "encoder">
+            <textarea type="text" id="inputEncode" rows="8" cols="64">secret message</textarea>
+            <button id="encodeButton" >Encode</button>
+            <span id="encodedResult" class = "containerContents"></span>
+    </div>
+    <div id = "decoder">
+        <textarea  id="inputDecode" type="text" rows="8" cols="64" >267977431,200444681,267780463,53478163</textarea>
+        <button id="decodeButton" >Decode</button>
+        <span id="decodedResult" class = "containerContents"></span>
+    </div>
+<script src ="./js/bundle.js" rel="text/javascript"></script>
+</body>
+</html>

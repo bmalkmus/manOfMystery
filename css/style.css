@@ -1,0 +1,184 @@
+*{
+    border: 0;
+    padding: 0;
+    margin: 0;
+}
+@font-face {
+    font-family: AustinPowers;
+    src: url(../austin-powers//actionis/actionis.ttf)
+}
+
+body{
+    background-color: black;
+}
+
+
+div {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 100vh;
+    flex-direction: column;
+}
+
+.links{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+    align-items: center;
+}
+a, a:visited{
+    font-size: 50px;
+    text-decoration: none;
+    font-family: AustinPowers;
+    color: rgb(255,241,18);
+    -webkit-text-fill-color: rgb(224,92,7);
+    -webkit-text-stroke: 1px rgb(255,241,18);
+    
+}
+a:hover {
+    font-size: 80px;
+    text-shadow:rgb(69,72,149) 10px 10px 10px;
+}
+
+#welcome{
+    background-image: url(../images/retroJack.png);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+h3 {
+    font-family: AustinPowers;
+    color: rgb(255,241,18);
+    text-shadow: 10px 10px 10px rgb(69,72,149);
+    font-size: 80px;
+    text-align: center;
+}
+
+h4 {
+    font-family: AustinPowers;
+    color: rgb(69,72,149);
+    text-shadow: 2px 2px 2px rgb(255,241,18);
+    font-size: 40px;
+    text-align: center;
+}
+
+#encoder {
+    background-color:rgb(205,55,67);
+}
+
+#decoder {
+    background-image: url(../images/decodeBackground.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    
+}
+
+#inputEncode, #inputDecode {
+    background-color:rgb(244,168,46);
+    box-shadow: 5px 5px 20px rgb(255,241,18);
+    color: rgb(224,92,7);
+    font-size: 25px;
+    border-radius: 5px;
+    caret-color: rgb(224,92,7);
+    outline: none;
+}
+
+span {
+    font-size: 40px;
+    font-weight: bolder;
+    overflow-x: scroll;
+    max-width: 100%;
+    color: rgb(42,156,165);
+    -webkit-text-fill-color: rgb(42,156,165);
+    -webkit-text-stroke: 1px black;
+    text-shadow: 4px 4px 6px black;
+}
+
+button {
+    padding: 8px 24px;
+    border-radius: 16px;
+    font-size: 35px;
+    outline: none;
+}
+
+#encodeButton, #decodeButton{
+    background-color:rgb(13,32,110);
+    color: rgb(244,168,46);
+    box-shadow: 4px 4px 10px rgb(31,55,151);
+}
+/* #decodeButton{
+    background-color:rgb(205,55,67);
+    color: rgb(244,168,46);
+    box-shadow: 4px 4px 10px rgb(240,91,103);
+} */
+
+#decodeButton:hover, #encodeButton:hover {
+    cursor: pointer;
+    box-shadow:  4px 4px 10px rgb(255,241,18);
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+    border-radius: 10px;
+    background-color: rgb(244,168,46);
+  }
+   
+::-webkit-scrollbar-track{
+background: linear-gradient(0deg, rgb(205,55,67) 0%, rgb(244,168,46) 35%, rgb(13,32,110) 100%);
+-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+}
+   
+::-webkit-scrollbar-thumb{
+background:transparent;
+box-shadow: 0px 0px 0px 100000vh rgb(255,241,18);
+border-radius: 10px;
+}
+
+::-webkit-scrollbar-track:horizontal{
+    background: linear-gradient(90deg, rgb(205,55,67) 0%, rgb(244,168,46) 35%, rgb(13,32,110) 100%);
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+    box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    }
+
+@media screen and (max-width: 915px) {
+  textarea {
+      width: 75%;
+  }
+}
+@media screen and (max-width: 700px) {
+    h3{
+        font-size: 40px;
+    }
+    .links{
+        flex-direction: column;
+    }
+    a:hover {
+        font-size: 60px;
+    }
+}
+@media screen and (max-width: 345px) {
+    h3{
+        font-size: 25px;
+    }
+}
+@media screen and (max-width: 215px) {
+    h3{
+        font-size: 30px;
+    }
+    a, a:visited {
+        font-size: 30px;
+    }
+    a:hover{
+        font-size: 40px;
+    }
+}
+
+
+
+
+
+
+
